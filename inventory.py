@@ -1,6 +1,6 @@
 """
-The purpose of this script is to create an environment 
-inventory based on the ouput of scripts used for 
+The purpose of this script is to create an environment
+inventory based on the output of scripts used for
 sizing and capacity exercises.
 
 Version 1: raw row with directory paths and file names
@@ -29,6 +29,7 @@ print('-----------------------------------------------------------\n')
 """
 
 # print each file/doc on a row with full path
+# result of this for loop is de-duplicated rows
 for subdir, dirs, files in os.walk(path):
     for file in files:
         if file.endswith('.zip'):
@@ -36,9 +37,10 @@ for subdir, dirs, files in os.walk(path):
         else:
             print(os.path.join(subdir, file))
 
-for subdir, dirs, files in os.walk(path):
-    for file in files:
+print('<--------------------------------------------------->')
+
+#for subdir, dirs, files in os.walk(path):
+    #for file in files:
 
         #print(os.path.isdir(file)) #returns False because class = str
-        print(type(file))
-
+        #print(type(file))
