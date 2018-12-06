@@ -1,4 +1,8 @@
 """
+The purpose of this script is to create an environment 
+inventory based on the ouput of scripts used for 
+sizing and capacity exercises.
+
 Version 1: raw row with directory paths and file names
 in one row.
 
