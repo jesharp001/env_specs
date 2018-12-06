@@ -3,8 +3,7 @@ The purpose of this script is to create an environment
 inventory based on the output of scripts used for
 sizing and capacity exercises.
 
-Version 1: raw row with directory paths and file names
-in one row.
+Version 1: raw row with directory paths and file names with one file per row.
 
 Python 3.7.1
 """
